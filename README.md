@@ -1,0 +1,1 @@
+Secrets are blocked at PR level using GitLeaks

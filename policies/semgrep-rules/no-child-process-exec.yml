@@ -1,0 +1,8 @@
+rules:
+  - id: no-child-process-exec
+    patterns:
+      - pattern: exec(...)
+    message: >
+      Avoid using exec() from child_process. This may lead to command injection vulnerabilities.
+    languages: [javascript]
+    severity: ERROR
