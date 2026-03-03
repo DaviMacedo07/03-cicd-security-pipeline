@@ -1,0 +1,21 @@
+name: Security - SAST (Semgrep Custom Rules)
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  semgrep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run Semgrep with custom rules
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: policies/semgrep-rules
