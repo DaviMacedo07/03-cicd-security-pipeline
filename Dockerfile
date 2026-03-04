@@ -7,6 +7,8 @@ RUN npm install
 
 COPY . .
 
+RUN apk update && apk upgrade
+
 EXPOSE 3000
 
 CMD ["node", "server.js"]
