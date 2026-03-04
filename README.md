@@ -1,5 +1,9 @@
 # DevSecOps CI/CD Security Pipeline
 
+## Pipeline Status
+
+![CI](https://github.com/DaviMacedo07/03-cicd-security-pipeline/actions/workflows/ci.yml/badge.svg)
+
 A secure CI/CD pipeline implementing multiple security controls to detect vulnerabilities early in the development lifecycle.
 
 Modern software development relies heavily on open-source dependencies and containerized deployments.  
